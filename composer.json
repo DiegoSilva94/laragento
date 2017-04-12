@@ -1,0 +1,26 @@
+{
+  "name": "dsilva94/laragento",
+  "description": "Facil integração entre o magento e o laravel 5.*",
+  "keywords": [
+    "laravel", "magento"
+  ],
+  "homepage": "https://github.com/dsilva94/laragento",
+  "authors": [
+    {
+      "name": "Diego da Silva Oliveira",
+      "email": "dsilvaoliveira94@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.0.0",
+    "illuminate/support": ">=5.0",
+    "dsilva94/magento-client-v2": "^1.0"
+  },
+  "autoload": {
+
+    "psr-0": {
+      "Laragento\\": "src/"
+    }
+  }
+}
