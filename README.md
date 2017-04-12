@@ -5,10 +5,10 @@ Uma forma de integrar o Laravel com magento de forma simples [Laravel 5](http://
 
 ## Documentation
 
-* [Instalação](#instalação)
-* [Começando](#começando)
+* [Instalação](#instalacao)
+* [Começando](#comecando)
 * [Ajuda](#ajuda)
-* [Licença](#licença)
+* [Licença](#licenca)
 
 
 ## Instalação
