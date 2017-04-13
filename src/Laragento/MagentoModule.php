@@ -26,23 +26,32 @@ class MagentoModule
     /**
      * @param $name
      * @param $arguments
+     * @return mixed
      * @throws MethodNotFound
      */
     public function __call($name, $arguments)
     {
-        if(!method_exists($this->magentoModule,$name))
+        if(!method_exists($this->magentoModule, $name))
             throw new MethodNotFound();
+        $method = call_user_func_array([ $this->magentoModule, $name ], $arguments);
         if($this->make)
-            return $this->magentoModule->{$name}($arguments);
-        return $this->magentoModule->{$name}($arguments)->execute();
+            return $method;
+        return $method->execute();
     }
 
+    /**
+     * @return MagentoModule
+     */
     public function make()
     {
         $that = $this;
         $that->setMake(true);
         return $that;
     }
+
+    /**
+     * @param $make
+     */
     public function setMake($make)
     {
         $this->make = $make;
