@@ -16,6 +16,13 @@ Uma forma de integrar o Laravel com magento de forma simples [Laravel 5](http://
 ```
 composer require dsilva94/laragento
 ```
+ou adicionar no composer.json para o caso de dev-master
+
+```json
+    "require": {
+        "dsilva94/laragento": "dev-master"
+    }
+```
   
 Agora, adicione o LaragentoServideProvider a config de `providers` array localizado no `config/app.php`.
 
