@@ -101,4 +101,4 @@ Please submit all issues and questions using GitHub issues and I will try to hel
 
 ## Licença
 
-*Laragento* foftware livre distribuído sob os termos do MIT license.
+*Laragento* software livre distribuído sob os termos do MIT license.
